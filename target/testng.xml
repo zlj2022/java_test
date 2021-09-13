@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--加上下面这一句，xml文件中不符合要求的标签对就会爆红提示-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+    <test name="test">
+        <classes>
+            <!-- 注意：执行要再这里执行xml 文件
+            class这个是文件路径地址，有多少要执行的Java文件就写多少class
+            但是这种方法比较傻，一般采用数据驱动的方式-->
+            <class name="com.lemon.day11.TestngTest"/>
+            <class name="com.lemon.day11.AddCar"/>
+        </classes>
+       <!-- <lemon>
+            <class name="com.lemon.day11.TestngTest"/>
+        </lemon>-->
+
+    </test>
+    <parameter name="mobilephone" value="18588220000"/>
+    <parameter name="password" value="123456"/>
+</suite>

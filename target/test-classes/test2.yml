@@ -1,0 +1,14 @@
+#记得key：value中间一定要加空格
+name: lemon
+age: 18
+isSingle: true
+phone: ~
+data: 2021-08-25
+address:
+  province: 湖南
+  city: 长沙
+provinces:
+  - province: 湖北
+    city: 武汉
+  - province: 广东
+    city: 广州
